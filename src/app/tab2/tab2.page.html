@@ -1,0 +1,29 @@
+<ion-content [fullscreen]="true" class="ion-padding">
+  <div class="container khmer-font" *ngIf="showData">
+    <div class="row">
+      <div class="col-12 mt-3">
+        <div class="card p-3 rounded-0">
+          <h3>{{ showData.title }}</h3>
+          <h4><b>អ្នកនិពន្ធ:</b> {{ showData.customer?.name }}</h4>
+          <h4><b>ប្រភេទ</b>: {{ showData.category?.name }}</h4>
+          <img
+            [src]="'http://127.0.0.1:8000/storage/' + showData.feather_image"
+            class="card-img-top pt-2"
+            alt="Image"
+          />
+          <div class="head pt-2">
+            {{ showData.content }}
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Back Button -->
+    <div class="mb-3 mt-4">
+      <a routerLink="/tabs/tab1" class="btn btn-primary">
+        ← Back to Home
+      </a>
+    </div>
+  </div>
+</ion-content>

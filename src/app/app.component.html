@@ -1,0 +1,34 @@
+<ion-app>
+  <ion-header [translucent]="true">
+  <ion-toolbar class="custom-toolbar d-flex align-items-center justify-content-between">
+
+    <!-- Logo -->
+    <ion-buttons slot="start">
+      <ion-avatar class="logo-avatar mt-3">
+        <img src="assets/web-logo.png" alt="Logo">
+      </ion-avatar>
+    </ion-buttons>
+
+    <!-- Search Bar -->
+    <div class="search-container">
+      <ion-searchbar
+        placeholder="Search"
+        animated="true"
+        showClearButton="never"
+        class="searchbar-custom">
+      </ion-searchbar>
+    </div>
+
+    <!-- User Icon -->
+    <ion-buttons slot="end">
+      <ion-button class="user-btn">
+        <ion-icon slot="icon-only" name="person-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+
+  </ion-toolbar>
+</ion-header>
+
+  <ion-router-outlet></ion-router-outlet>
+</ion-app>
+

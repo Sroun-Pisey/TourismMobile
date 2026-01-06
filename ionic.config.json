@@ -1,0 +1,7 @@
+{
+  "name": "SarikaTab",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
